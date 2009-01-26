@@ -50,7 +50,7 @@ a list. Common values are:
 }
 \references{Derringer, G. and Suich, R. (1980),
 Simultaneous Optimization of Several Response Variables.
-{\em Journal of Quality Technology} {\bf 12}, 214--219.}
+\emph{Journal of Quality Technology} \bold{ 12}, 214--219.}
 \author{Max Kuhn}
 
 \seealso{\code{\link{predict.dMax}}}

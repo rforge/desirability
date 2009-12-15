@@ -1,8 +1,8 @@
 predict.dBox <- function(object, newdata = NA, ...)
 {
    out <- vector(length = length(newdata), mode = "numeric") * NA 
-   out[newdata < object$low | newdata > object$low] <- 0
-   out[newdata >= object$low & newdata <= object$low] <- 1
+   out[newdata < object$low | newdata > object$high] <- 0
+   out[newdata >= object$low & newdata <= object$high] <- 1
    out[is.na(out)] <- object$missing
    if(!is.null(object$tol)) out[out == 0] <- object$tol
    out
